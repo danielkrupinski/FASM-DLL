@@ -13,7 +13,7 @@ endp
 
 section '.idata' import readable
 
-  library user,'USER32.DLL'
-  import user, MessageBox,'MessageBoxA'
+library user, 'USER32.DLL'
+import user, MessageBox, 'MessageBoxA'
 
 section '.reloc' fixups data readable discardable
